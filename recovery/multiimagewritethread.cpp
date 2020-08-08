@@ -1419,7 +1419,7 @@ QMessageBox::ButtonRole  MultiImageWriteThread::untar(const QString &tarball, co
     }
     else if (tarballPath.endsWith(".xz"))
     {
-        cmd += " | xz -dc";
+        cmd += " | xz -dcT 0";
     }
     else if (tarballPath.endsWith(".bz2"))
     {
